@@ -1,0 +1,31 @@
+<!-- 
+Ler nota do aluno
+Se nota é número
+então
+Se nota maior ou igual a 60
+então Aprovado
+senão Reprovado
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Notas</title>
+</head>
+<script>
+function Nota() {
+  var nota1 = parseInt(document.getElementById("n1").value);
+  if ( nota1 >= 60){
+    document.getElementById("res").innerHTML = "Aprovado";  
+  } else {
+    document.getElementById("res").innerHTML = "Reprovado";
+  }
+}
+</script>
+<body>
+<input type="text" id="n1" placeholder="Digite sua nota: "> <br>
+<p id="res">Resultado: </p>
+<input type="button" value="Clique aqui" onclick="Nota()">
+</body>
+</html>
